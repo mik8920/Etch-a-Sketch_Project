@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 50px;
+  flex-direction: column;
+}
+
+.gridContainer {
+  display: flex;
+  /* align-items: space-around; */
+  border: 1px solid black;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 500px;
+}
+
+.gridSquare {
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+
+#gridButton {
+  color: black;
+  font-size: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
