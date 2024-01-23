@@ -26,11 +26,11 @@ gridButton.addEventListener("mouseout", () => {
   gridButton.style.cursor = "default";
 });
 
-/* const getRandomColor = () => {
+const getRandomColor = () => {
   const randomRGB = () => Math.floor(Math.random() * 256);
   return `rgb(${randomRGB()}, ${randomRGB()}, ${randomRGB()})`;
 };
- */
+
 
 function selectColor(color) {
   selectedColor = color;
@@ -50,7 +50,7 @@ const gridFunction = () => {
 
     gridSquare.addEventListener("mouseover", () => {
       if (isMouseDown) {
-        gridSquare.style.backgroundColor = selectedColor;
+        gridSquare.style.backgroundColor = getRandomColor()
       }
     });
 
@@ -60,7 +60,7 @@ const gridFunction = () => {
 
     gridSquare.addEventListener("mousedown", () => {
       isMouseDown = true;
-      gridSquare.style.backgroundColor = selectedColor;
+      gridSquare.style.backgroundColor = getRandomColor()
     });
   }
 };
