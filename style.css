@@ -25,8 +25,6 @@ body {
   border: 2px solid rgb(6, 86, 98);
   border-radius: 5px;
   flex-wrap: wrap;
-  height: 625px;
-  width: 1250px;
 }
 
 .gridSquare {

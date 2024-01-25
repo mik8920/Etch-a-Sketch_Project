@@ -1,10 +1,12 @@
+let gridWidth = 1250;
+let gridHeight = 625;
 const gridContainer = document.querySelector(".gridContainer");
+gridContainer.style.width = gridWidth;
+gridContainer.style.height = gridHeight;
 let gridSize = 16;
 const gridButton = document.querySelector("#gridButton");
 let isMouseDown = false; /*tracks if the button is pressed*/
 let backgroundColor = "white";
-let gridWidth = 1250;
-let gridHeight = 625;
 
 /*shows a prompt when gridButton is clicked*/
 gridButton.addEventListener("click", (gridButton) => {
@@ -13,10 +15,10 @@ gridButton.addEventListener("click", (gridButton) => {
   );
 
   /*converts user's input into a integer value*/
-  const parseIntNumber = parseInt(squareNumber, 10);
+  const parseNumber = parseInt(squareNumber, 10);
   /*checks if user's input is between 0-100 and resets the grid*/
-  if (!isNaN(parseIntNumber) && parseIntNumber > 0 && parseIntNumber <= 100) {
-    gridSize = parseIntNumber;
+  if (!isNaN(parseNumber) && parseNumber > 0 && parseNumber <= 100) {
+    gridSize = parseNumber;
     gridFunction();
     backgroundColor = "white";
   } else {
