@@ -48,7 +48,6 @@ function selectColor(color) {
 }
 
 const gridFunction = () => {
-  gridContainer.textContent = ""; /*removes the content of gridContainer*/
   /*removes all child nodes from gridContainer in order to recreate the grid*/
   while (gridContainer.firstChild) {
     gridContainer.removeChild(gridContainer.firstChild);
